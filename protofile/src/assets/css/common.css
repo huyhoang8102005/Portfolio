@@ -49,5 +49,32 @@
 }
 
 body {
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--body-color);
+}
+
+.button {
+    width: 160px;
+    height: 60px;
+    background: #000;
+    border-radius: 16px;
+
+    color: #fff;
+    font-weight: 500;
+
+    transition: all 0.5s;
+}
+
+.button:hover {
+    transform: translateY(-10px);
+    background: pink;
+    opacity: 0.8;
+    color: #000;
+    font-weight: 600;
+}
+
+.icon-light {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(55deg)
+      brightness(108%) contrast(101%);
 }

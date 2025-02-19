@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <header id="header" class="mt-4">
     <div class="container">
@@ -51,6 +52,11 @@
 .navbar__link {
   font-weight: 500;
   color: var(--title-color);
+  transition: all 0.2s;
+}
+
+.navbar__link:hover {
+  opacity: 0.8;
 }
 
 .logo__name {
