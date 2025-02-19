@@ -10,9 +10,9 @@
           <a href="#">
             <img src="../assets/icons/github.svg" alt="" class="icon" />
           </a>
-          <div href="#">
+          <a href="#">
             <img src="../assets/icons/linkedin.svg" alt="" class="icon" />
-          </div>
+          </a>
         </div>
         <div class="hero__left">
           <div class="hero__left-name">
@@ -31,12 +31,12 @@
           <div class="hero__left-btn">
             <button class="button has-icon">
               <span>Say Hello</span>
-              <img src="../assets/icons/send.svg" alt="" class="icon icon-light icon-hover" />
+              <img src="../assets/icons/send.svg" alt="" class="icon icon-light" />
             </button>
           </div>
         </div>
         <div class="hero__right">
-          <img class="hero__right-img" src="" alt="" />
+          <div class="hero__right-img"></div>
         </div>
       </div>
     </div>
@@ -103,19 +103,39 @@
   margin-top: 48px;
 }
 
-.has-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.hero__contact .icon {
+  transition: all 0.5s;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
+.hero__contact .icon:hover {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(77%) saturate(202%) hue-rotate(305deg) brightness(104%) contrast(102%);
 }
 
-.button:hover .icon-hover {
-  filter: brightness(0) saturate(100%);
+/* Right  */
+.hero__right-img {
+  background-image: url("../assets/img/avatar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px #ffc0cb;
+  width: 400px;
+  height: 400px;
+  order: 1;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 </style>
