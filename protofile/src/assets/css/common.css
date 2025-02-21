@@ -55,7 +55,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 1000vh;
     font-family: 'Poppins', sans-serif;
     background-color: var(--body-color);
 }
@@ -88,6 +88,10 @@ body {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(55deg) brightness(108%) contrast(101%);
 }
 
+.icon-grey {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(2%) saturate(57%) hue-rotate(35deg) brightness(88%) contrast(90%);
+}
+
 .has-icon {
     display: flex;
     align-items: center;
@@ -103,4 +107,9 @@ body {
 .icon-medium {
     width: 18px;
     height: 18px;
+}
+
+.icon-large {
+    width: 30px;
+    height: 30px;
 }

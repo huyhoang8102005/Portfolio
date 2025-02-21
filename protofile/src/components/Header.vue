@@ -20,7 +20,7 @@
               <a href="#" class="navbar__link">Skills</a>
             </li>
             <li class="navbar__item">
-              <a href="#" class="navbar__link">Services</a>
+              <a href="#" class="navbar__link">Qualification</a>
             </li>
             <li class="navbar__item">
               <a href="#" class="navbar__link">Portfolio</a>
