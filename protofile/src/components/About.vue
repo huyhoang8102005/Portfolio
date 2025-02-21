@@ -132,6 +132,7 @@
 .about__btn {
   width: 220px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .has-icon {
